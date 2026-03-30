@@ -69,25 +69,21 @@ export WEEX_LOCALE="en-US"
 
 ## How to Use This Skill in Codex / Openclaw / Claude Code
 
-Mention `$weex-trader-skill` and describe what you want in plain English.
+Mention `$weex-trader-skill`, then say what you want in plain language.
+You do not need rigid command-style wording.
 
-Example prompts:
-
-```text
-Use $weex-trader-skill to get the latest BTCUSDT spot ticker and explain the result.
-```
-
-```text
-Use $weex-trader-skill to place a futures limit short on ETHUSDT, size 0.001 at 10000.
-```
+| Scenario | Natural-language example |
+|---|---|
+| Check market price | `"What's the latest BTCUSDT spot price?"` |
+| Review account or positions | `"Show me my current futures positions and available balance."` |
+| Place a spot market order | `"Buy 200 USDT worth of BTC at market."` |
+| Place a futures limit order | `"Open a small ETHUSDT short with a limit order at 2500."` |
+| Cancel open orders | `"Cancel my open ETHUSDT futures orders."` |
+| Check order status | `"Did my BTCUSDT order fill yet?"` |
 
 Current local wrappers target the latest documented V3 order endpoints:
 - Futures: `POST /capi/v3/order`
 - Spot: `POST /api/v3/order`
-
-```text
-Use $weex-trader-skill to cancel my open ETHUSDT futures orders.
-```
 
 ## Module quick-reference
 
